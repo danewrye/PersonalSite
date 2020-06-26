@@ -1,0 +1,1 @@
+This project is a personal site to allow others to learn more about me and my experience. It is made with html, css, and javascript.
