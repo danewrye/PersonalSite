@@ -1,13 +1,27 @@
 body {
     background-color: black;
+    /*background-image: url("images/nvhighway.jpg");*/
 }
 
 h1 {
     color: gold;
 }
 
+/* color of phrase is manipulated with javascript */
+p {
+    color: lime;
+}
+
+ul {
+    color: teal;
+    display: flex;
+    list-style: none;
+    margin: auto;
+}
+
 .selfPhoto {
     display: block;
-    margin: auto;
-    width: 50%;
+    width: 20%;
+    height: 20%;
+    border-radius: 50%;
 }
