@@ -1,22 +1,38 @@
 body {
-    background-color: black;
-    /*background-image: url("images/nvhighway.jpg");*/
+    background-image: url("../images/nvroad0.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 h1 {
-    color: gold;
-}
-
-/* color of phrase is manipulated with javascript */
-p {
-    color: lime;
+    color: white;
+    font-size: 2rem;
 }
 
 ul {
     color: teal;
     display: flex;
+    justify-content: space-around;
     list-style: none;
-    margin: auto;
+    margin-bottom: auto;
+    margin-right: 30px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+li {
+    margin-left: .5rem;
+    margin-right: .5rem;
+    color: black;
+}
+
+a {
+    color: black;
 }
 
 .selfPhoto {
@@ -24,4 +40,9 @@ ul {
     width: 20%;
     height: 20%;
     border-radius: 50%;
+}
+
+.social {
+    width: 2rem;
+    height: 2rem;
 }
