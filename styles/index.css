@@ -42,6 +42,10 @@ a {
     border-radius: 50%;
 }
 
+.nav {
+    font-size: 1.2rem;
+}
+
 .social {
     width: 2rem;
     height: 2rem;
