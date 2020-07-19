@@ -5,12 +5,12 @@ body {
 }
 
 h1 {
-    color: white;
-    font-size: 2rem;
+    color: #f9d71c;
+    font-size: 2.3rem;
+    margin-bottom: 1%;
 }
 
 ul {
-    color: teal;
     display: flex;
     justify-content: space-around;
     list-style: none;
@@ -28,7 +28,6 @@ section {
 li {
     margin-left: .5rem;
     margin-right: .5rem;
-    color: black;
 }
 
 a {

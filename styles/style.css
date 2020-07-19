@@ -1,139 +1,153 @@
-html {
-    font-size: 10px;
-    font: "Open Sans", sans-serif;
-    background-color: hsl(47,32.7%, 80%);
-}
-
-body {
-    margin: 0 auto;
-}
-
-h1 {
-    font-size: 3rem;
-    text-align: center;
-    color: black;
-}
-
-ul {
-    list-style-type: none;
-}
-
-ul, p {
-    font-size: 16px;
-    line-height: 2;
-    letter-spacing: 1px;
-}
-
-img {
-    display: block;
-    margin: 0 auto;
-}
-
-a {
-    color: #003057;
-    text-decoration: none;
+section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 75%;
+    align-items: flex-start;
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 header {
     display: flex;
-    margin-bottom: 10vh;
+    width: 75%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    border-bottom: 1px solid maroon;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-header > div {
-    flex: 1;
-}
-
-main {
+ul {
     display: flex;
+    list-style: none;
+    min-width: 0;
 }
 
-.pagetext {
-    flex: 6;
+li {
+    margin-left: .5rem;
+    margin-right: .5rem;
+    color: black;
 }
 
-.spacing {
-    flex: 1;
+a {
+    color: maroon;
+    font-size: 1.3rem;
 }
 
-.ctext {
-    font-size = 1px;
-    color: hsl(47,32.7%, 80%);
+h3 {
+    border: 2px dashed maroon;
+    color: maroon;
+    padding: 1%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.sidedisplay {
-    flex: 1.5;
-    display: flex;
-    flex-direction: column;
+/* genreal classes */
+
+.selected {
+    font-weight: bold;
 }
 
-.sidedisplay > div {
-    flex: 1;
+.navigation {
+    margin-left: 60%;
 }
 
-.headertext {
-    color: #003057;
-    text-align: center;
-    font-size: 4rem;
-}
+/* class specific to about.html */
 
-.curr1 {
-    border-top-color: #003057;
-    border-top-style: solid;
-    border-top-width: 3px;
-    border-right-color: #003057;
-    border-right-style: solid;
-    border-right-width: 3px;
-    text-align: center;
-    background-color: hsl(47,32.7%, 80%);
-}
-
-.curr2, .curr3 {
-    border-top-color: #003057;
-    border-top-style: solid;
-    border-top-width: 3px;
-    border-right-color: #003057;
-    border-right-style: solid;
-    border-right-width: 3px;
-    border-left-color: #003057;
+.general {
+    border-left-color: gold;
+    border-left-width: 2%;
     border-left-style: solid;
-    border-left-width: 3px;
-    text-align: center;
-    background-color: hsl(47,32.7%, 80%);
+    margin-bottom: 1%;
+    padding-left: 1%;
 }
 
-.curr4 {
-    border-top-color: #003057;
-    border-top-style: solid;
-    border-top-width: 3px;
-    border-left-color: #003057;
+.cs {
+    border-left-color: green;
+    border-left-width: 2%;
     border-left-style: solid;
-    border-left-width: 3px;
-    text-align: center;
-    background-color: hsl(47,32.7%, 80%);
+    margin-bottom: 1%;
+    padding-left: 1%;
 }
 
-
-.mini1, .mini2, .mini3, .mini4 {
-    background-color: #B3A369;
-    border-bottom-color: #003057;
-    border-bottom-style: solid;
-    border-bottom-width: 3px;
-    text-align: center;
+.self {
+    border-left-color: red;
+    border-left-width: 2%;
+    border-left-style: solid;
+    margin-bottom: 1%;
+    padding-left: 1%;
 }
 
-.mainpic {
-    background-color: #B3A369;
-    border-bottom-style: solid;
-    border-bottom-width: 3px;
-}
-
-.me {
-    max-width: 100%;
-    max-height: 100%;
+.selfPhoto {
+    display: block;
+    width: 4%;
+    height: 4%;
     border-radius: 50%;
 }
 
-.sidebutton {
-    width: 100%;
-    height: 100%;
+.mountains {
+    display: block;
+    width: 10%;
+    height: auto;
+    margin-left: 45%;
+    margin-bottom: -5%;
 }
+
+.slideshowDiv {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slide {
+    width: 60%;
+    height: auto;
+}
+
+/* class specific to experience.html */
+
+.logo {
+    width: 4%;
+    height: auto;
+    display: inline;
+    margin-right: 1%;
+}
+
+.workplace {
+    display: inline;
+    font-size: 2rem;
+}
+
+.location {
+    display: inline;
+    margin-left: 60%;
+}
+
+.expCard {
+    width: 80%;
+    border-left-size: 2%;
+    padding-left: 2%;
+    margin-bottom: 3%;
+}
+
+.even {
+    border-left-style: solid;
+    border-left-color: maroon;
+}
+
+.odd {
+    border-left-style: dashed;
+    border-left-color: maroon;
+}
+
+/* class specific to projects.html */
+
+.gridSection {
+
+}
+
+
