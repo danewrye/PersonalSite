@@ -47,6 +47,10 @@ h3 {
     margin-right: auto;
 }
 
+footer {
+    padding-top: 2%;
+}
+
 /* general classes */
 
 .selected {
@@ -62,6 +66,10 @@ h3 {
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
+}
+
+.experiencePage {
+    padding-top: 0%;
 }
 
 /* class specific to about.html */
@@ -160,3 +168,106 @@ h3 {
 
 /* class specific to projects.html */
 
+#selected {
+    opacity: 100%;
+}
+
+#unselected {
+    opacity: 40%;
+}
+
+.all {
+    background-color: #ff0000;
+}
+
+.software {
+    background-color: #ffa500;
+}
+
+.hardware {
+    background-color: #ffff00;
+}
+
+.design {
+    background-color: #008000;
+}
+
+.front_end  {
+    background-color: #6bbadb;
+}
+
+.algorithms {
+    background-color: #b86fed;
+}
+
+.machine_learning {
+    background-color: #ee82ee;
+}
+
+.bsoftware {
+    border:solid 5px #ffa500;
+}
+
+.bhardware {
+    border:solid 5px #ffff00;
+}
+
+.bdesign {
+    border:solid 5px #008000;
+}
+
+.bfront_end  {
+    border:solid 5px #6bbadb;
+}
+
+.balgorithms {
+    border:solid 5px #b86fed;
+}
+
+.bmachine_learning {
+    border:solid 5px #ee82ee;
+}
+
+.tagsWrapper {
+    width: 100%;
+}
+
+.tags > li {
+    cursor: pointer;
+    width: 20%;
+    height: 10%;
+    border: solid 1px black;
+    padding: 1%;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.projectCard {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    margin-top: 3%;
+    border-radius: 10px;
+}
+
+.projectImageContainer {
+    width: 25%;
+}
+
+.projectImage {
+    width: 100%;
+    height: 100%;
+}
+
+.projectDescription {
+    width: 75%;
+    text-align: center;
+}
+
+.projectTags > li {
+    width: 20%;
+    height: 10%;
+    border: solid 1px black;
+    padding: 1%;
+    border-radius: 10px;
+}
