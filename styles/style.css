@@ -2,7 +2,6 @@ section {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-items: center;
     width: 75%;
     align-items: flex-start;
     margin-top: 2%;
@@ -37,6 +36,7 @@ li {
 a {
     color: maroon;
     font-size: 1.3rem;
+    text-decoration: none;
 }
 
 h3 {
@@ -47,7 +47,7 @@ h3 {
     margin-right: auto;
 }
 
-/* genreal classes */
+/* general classes */
 
 .selected {
     font-weight: bold;
@@ -57,31 +57,14 @@ h3 {
     margin-left: 60%;
 }
 
+.footerContact {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
 /* class specific to about.html */
-
-.general {
-    border-left-color: gold;
-    border-left-width: 2%;
-    border-left-style: solid;
-    margin-bottom: 1%;
-    padding-left: 1%;
-}
-
-.cs {
-    border-left-color: green;
-    border-left-width: 2%;
-    border-left-style: solid;
-    margin-bottom: 1%;
-    padding-left: 1%;
-}
-
-.self {
-    border-left-color: red;
-    border-left-width: 2%;
-    border-left-style: solid;
-    margin-bottom: 1%;
-    padding-left: 1%;
-}
 
 .selfPhoto {
     display: block;
@@ -98,17 +81,40 @@ h3 {
     margin-bottom: -5%;
 }
 
+.slideShowContainer {
+    display: flex;
+    margin-top: 3%;
+}
+
 .slideshowDiv {
+    padding-left: 1%;
+    border-left: dashed 2px maroon;
+    width: 60%;
+}
+
+.slide {
+    width: 100%;
+    height: auto;
+}
+
+.slideshowDescription {
+    padding-right: 1%;
+    width: 40%;
+    text-align: center;
+    border-right: dashed 2px maroon;
+}
+
+.descriptionTitle {
     margin-left: auto;
     margin-right: auto;
 }
 
-.slide {
-    width: 60%;
-    height: auto;
-}
-
 /* class specific to experience.html */
+
+.hmu {
+    text-align: center;
+    padding-top: 2%;
+}
 
 .logo {
     width: 4%;
@@ -119,19 +125,27 @@ h3 {
 
 .workplace {
     display: inline;
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
 .location {
     display: inline;
-    margin-left: 60%;
+    position: absolute;
+    right: 0;
 }
 
 .expCard {
+    position: relative;
     width: 80%;
     border-left-size: 2%;
     padding-left: 2%;
     margin-bottom: 3%;
+    transition: all .2s ease-in-out;
+}
+
+.expCard:hover {
+    transform: scale(1.1);
+    /*background-color: #fffff4;*/
 }
 
 .even {
@@ -145,9 +159,4 @@ h3 {
 }
 
 /* class specific to projects.html */
-
-.gridSection {
-
-}
-
 
