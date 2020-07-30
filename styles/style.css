@@ -16,7 +16,7 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: stretch;
-    border-bottom: 1px solid maroon;
+    border-bottom: 1px solid black;
     margin-left: auto;
     margin-right: auto;
 }
@@ -34,14 +34,15 @@ li {
 }
 
 a {
-    color: maroon;
+    color: black;
     font-size: 1.3rem;
     text-decoration: none;
 }
 
 h3 {
-    border: 2px dashed maroon;
-    color: maroon;
+    border-radius: 10px;
+    border: 2px solid black;
+    color: black;
     padding: 1%;
     margin-left: auto;
     margin-right: auto;
@@ -55,6 +56,7 @@ footer {
 
 .selected {
     font-weight: bold;
+    color: orange;
 }
 
 .navigation {
@@ -68,11 +70,42 @@ footer {
     flex-wrap: wrap;
 }
 
+.github {
+    color: #ffa500;
+}
+
+.linkedin {
+    color: #6bbadb;
+}
+
+.email {
+    color: #ee82ee;
+}
+
+.break {
+    color: black;
+    font-size: 1.3rem;
+}
+
 .experiencePage {
     padding-top: 0%;
 }
 
 /* class specific to about.html */
+
+.bio {
+    padding-left: 1%;
+    padding-right: 1%;
+    border-left: solid 2px #008000;
+    border-right: solid 2px #008000;
+}
+
+.cs {
+    padding-left: 1%;
+    padding-right: 1%;
+    border-left: solid 2px #ffa500;
+    border-right: solid 2px #ffa500;
+}
 
 .selfPhoto {
     display: block;
@@ -91,12 +124,15 @@ footer {
 
 .slideShowContainer {
     display: flex;
-    margin-top: 3%;
+    margin-top: 1%;
+    width: 100%;
+    box-shadow: 0 0 8px #ccc;
+    border-radius: 10px;
 }
 
 .slideshowDiv {
+    margin: 0 auto;
     padding-left: 1%;
-    border-left: dashed 2px maroon;
     width: 60%;
 }
 
@@ -109,7 +145,6 @@ footer {
     padding-right: 1%;
     width: 40%;
     text-align: center;
-    border-right: dashed 2px maroon;
 }
 
 .descriptionTitle {
@@ -118,6 +153,14 @@ footer {
 }
 
 /* class specific to experience.html */
+
+.professional {
+    background-color: #ffa500;
+}
+
+.community {
+    background-color: #6bbadb;
+}
 
 .hmu {
     text-align: center;
@@ -139,12 +182,18 @@ footer {
 .location {
     display: inline;
     position: absolute;
-    right: 0;
+    right: 2%;
 }
 
 .expCard {
+    /*border-left: solid 2px #ee82ee;
+    border-right: solid 2px #ee82ee;
+    */
+    padding: 1%;
+    box-shadow: 0 0 8px #ccc;
+    border-radius: 10px;
     position: relative;
-    width: 80%;
+    width: 100%;
     border-left-size: 2%;
     padding-left: 2%;
     margin-bottom: 3%;
@@ -156,14 +205,20 @@ footer {
     /*background-color: #fffff4;*/
 }
 
-.even {
-    border-left-style: solid;
-    border-left-color: maroon;
+.top {
+    border-top: solid 2px #ee82ee;
 }
 
-.odd {
-    border-left-style: dashed;
-    border-left-color: maroon;
+.bottom {
+    border-bottom: solid 2px #ee82ee;
+}
+
+.left {
+    border-left: solid 2px #ee82ee;
+}
+
+.right {
+    border-right: solid 2px #ee82ee;
 }
 
 /* class specific to projects.html */
@@ -204,30 +259,6 @@ footer {
     background-color: #ee82ee;
 }
 
-.bsoftware {
-    border:solid 5px #ffa500;
-}
-
-.bhardware {
-    border:solid 5px #ffff00;
-}
-
-.bdesign {
-    border:solid 5px #008000;
-}
-
-.bfront_end  {
-    border:solid 5px #6bbadb;
-}
-
-.balgorithms {
-    border:solid 5px #b86fed;
-}
-
-.bmachine_learning {
-    border:solid 5px #ee82ee;
-}
-
 .tagsWrapper {
     width: 100%;
 }
@@ -243,6 +274,8 @@ footer {
 }
 
 .projectCard {
+    border: none;
+    box-shadow: 0 0 8px #ccc;
     height: 10%;
     width: 100%;
     display: flex;
@@ -260,8 +293,14 @@ footer {
 }
 
 .projectDescription {
+    padding-left: 2%;
+    padding-right: 2%;
     width: 75%;
     text-align: center;
+}
+
+.projectTitle {
+    font-weight: bold;
 }
 
 .projectTags > li {
@@ -270,4 +309,10 @@ footer {
     border: solid 1px black;
     padding: 1%;
     border-radius: 10px;
+}
+
+.malariaLink {
+    color: black;
+    font-size: inherit;
+    text-decoration: underline;
 }
