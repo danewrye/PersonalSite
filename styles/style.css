@@ -12,19 +12,18 @@ section {
 header {
     display: flex;
     width: 75%;
+    height: 3rem;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: stretch;
-    border-bottom: 1px solid black;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 2%;
+    border-bottom: solid 1px black;
 }
 
 ul {
     display: flex;
     list-style: none;
-    min-width: 0;
 }
 
 li {
@@ -39,6 +38,12 @@ a {
     text-decoration: none;
 }
 
+h2 {
+    margin-left: auto;
+    margin-right: auto;
+    color: #B3A369;
+}
+
 h3 {
     border-radius: 10px;
     border: 2px solid black;
@@ -46,6 +51,21 @@ h3 {
     padding: 1%;
     margin-left: auto;
     margin-right: auto;
+}
+
+h4 {
+    margin-top: -1.5%;
+    margin-left: auto;
+    margin-right: auto;
+    color: #003057;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+button {
+    margin-top: 1.5%;
 }
 
 footer {
@@ -59,8 +79,31 @@ footer {
     color: orange;
 }
 
+.mountainWrapper {
+    position: relative;
+    width: 30%;
+}
+
+.mountains {
+    margin-top: auto;
+    margin-bottom: auto;
+    position: absolute;
+    left: 0;
+    bottom: 10%;
+    width: 40%;
+    height: auto;
+}
+
+.navigationWrapper {
+    display: block;
+    position: relative;
+    width: 70%;
+    margin-bottom: 1%;
+}
+
 .navigation {
-    margin-left: 60%;
+    position: absolute;
+    right: 1%;
 }
 
 .footerContact {
@@ -91,63 +134,93 @@ footer {
     padding-top: 0%;
 }
 
+/* class specific to index.html */
+
+
+.landing {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.social {
+    width: 2rem;
+    height: 2rem;
+}
+
+.inkWrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+}
+
+.ink {
+    width: 100%;
+    height: 100%;
+}
+
 /* class specific to about.html */
 
-.bio {
-    padding-left: 1%;
-    padding-right: 1%;
-    border-left: solid 2px #008000;
-    border-right: solid 2px #008000;
-}
 
-.cs {
-    padding-left: 1%;
-    padding-right: 1%;
-    border-left: solid 2px #ffa500;
-    border-right: solid 2px #ffa500;
-}
-
-.selfPhoto {
+.bullets {
+    list-style-type: circle;
     display: block;
-    width: 4%;
-    height: 4%;
-    border-radius: 50%;
 }
 
-.mountains {
-    display: block;
-    width: 10%;
-    height: auto;
-    margin-left: 45%;
-    margin-bottom: -5%;
+.listContainer {
+    display: flex;
+}
+
+.sublist {
+    width: 50%;
+}
+
+.cardContainer {
+    display: flex;
+    justify-content: center;
 }
 
 .slideShowContainer {
+    align-items: center;
     display: flex;
+    flex-direction: column;
     margin-top: 1%;
-    width: 100%;
+    width: 40%;
     box-shadow: 0 0 8px #ccc;
     border-radius: 10px;
 }
 
-.slideshowDiv {
-    margin: 0 auto;
-    padding-left: 1%;
-    width: 60%;
+.leftMargin {
+    margin-right: 3%;
+}
+
+.self {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .slide {
     width: 100%;
     height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .slideshowDescription {
-    padding-right: 1%;
-    width: 40%;
+    padding-left: 2%;
+    padding-right: 2%;
     text-align: center;
 }
 
+.free {
+    text-align: left;
+}
+
 .descriptionTitle {
+    font-weight: bold;
     margin-left: auto;
     margin-right: auto;
 }
@@ -176,7 +249,7 @@ footer {
 
 .workplace {
     display: inline;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
 }
 
 .location {
@@ -200,10 +273,11 @@ footer {
     transition: all .2s ease-in-out;
 }
 
+/*
 .expCard:hover {
     transform: scale(1.1);
-    /*background-color: #fffff4;*/
 }
+*/
 
 .top {
     border-top: solid 2px #ee82ee;

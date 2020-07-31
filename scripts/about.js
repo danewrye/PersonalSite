@@ -1,18 +1,10 @@
 // Define slideshow components
-let imagePathList = ['images/slide1.jpeg', 'images/slide2.jpg', 'images/slide3.jpg', 'images/slide4.jpg', 'images/slide5.jpeg'];
-let titleList = ['Title 1', 'Title 2', 'Title 3', 'Title 4', 'Title 5'];
-let textList = [];
-textList[0] = 'one';
-textList[1] = 'two';
-textList[2] = 'three';
-textList[3] = 'four';
-textList[4] = 'five';
+let imagePathList = ['images/slide1_square.jpg', 'images/slide2_square.jpg', 'images/slide3_square.jpg',
+ 'images/slide4_square.jpg', 'images/slide5_square.jpg', 'images/slide6_square.jpg', 'images/slide7_square.jpg'];
 
 //Find html elements and load up first page
 let slideShowIndex = 0;
 const slideShowImage = document.querySelector('.slide');
-const slideShowTitle = document.querySelector('.descriptionTitle');
-const slideShowText = document.querySelector('.description');
 const previous = document.querySelector('.previous');
 const next = document.querySelector('.next');
 displaySlide(slideShowIndex);
@@ -38,6 +30,4 @@ function changeSlide(n) {
 // Displays the currently selected slide
 function displaySlide(index) {
     slideShowImage.src = imagePathList[index];
-    slideShowTitle.innerHTML = titleList[index];
-    slideShowText.innerHTML = textList[index];
 }

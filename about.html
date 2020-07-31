@@ -2,37 +2,70 @@
 <html lang="en-US">
     <head>
         <meta charset="utf-8">
-        <title>Dane Wrye</title>
+        <title>About</title>
+        <link rel="icon" href="images/favicon.png">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
         <meta name="author" content="Dane Wrye">
         <meta name="description" content="A website portfolio do learn more about me, Dane Wrye.">
         <link href="styles/style.css" rel="stylesheet">
         <script src="scripts/about.js" defer></script>
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     </head>
     <body>
         <header>
+          <div class="mountainWrapper">
             <img class="mountains" src="images/mountains.png" alt="Mountain range image">
+          </div>
+          <div class="navigationWrapper">
             <ul class="navigation">
                 <li class="selected"><a class="email" href=about.html>About</a></li>
                 <li><a href=experience.html>Experience</a></li>
                 <li><a href=projects.html>Projects</a></li>
                 <li><a href=index.html>Landing</a></li>
             </ul>
+          </div>
         </header>
-        <section class="justifyCenter">
-            <p class="bio">Hello again! My name is Dane Wrye. I'm currently looking for a Summer 2021 internship within computer science and software engineering- if you have any interest, please contact me! With that out of the way, let me continue: I'm a computer science major from Reno, Nevada, and I study at the Georgia Institute of Technology, where I will be heading into my junior year!</p>
-            <p class="cs">Within computer science, I have many interests. I'm fascinated by artificial intelligence, math, embedded computing, and internet of things, among others. I absolutely love to create: I spend lots of my time helping run The Hive, an ECE makerspace, and working on personal projects at the intersection of computer science and my personal interests. Things like scuba diving, backpacking, travel, language learning, football, lacrosse, coaching, lifting, and reading.If you have a little more time, and want to get to know me a little bit better, check out the slideshow below!</p>
-            <div class="slideShowContainer">
-                <div class="slideshowDiv">
-                    <img class="slide" alt="Selected images of hobbies">
+        <section>
+            <h2>Georgia Tech</h2>
+            <h4>College of Computing Roster</h4>
+
+            <div class="cardContainer">
+                <div class="slideShowContainer leftMargin bottom">
+                    <div class="slideshowDiv">
+                        <img class="self" src="images/me.jpg" alt="Selected images of hobbies">
+                    </div>
+                    <div class="slideshowDescription">
+                        <p class="descriptionTitle">Dane Wrye</p>
+                        <div class="listContainer">
+                            <div class="sublist">
+                                <ul class="bullets free">
+                                    <li>Class: Junior</li>
+                                    <li>Hometown: Reno, Nv</li>
+                                    <li>Major: Computer Science</li>
+                                </ul>
+                            </div>
+                            <div class="sublist">
+                                <ul class="bullets free">
+                                    <li>Height: 6'3</li>
+                                    <li>Weight: 215lb</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="slideshowDescription">
-                    <p class="descriptionTitle"></p>
-                    <p class="description"></p>
-                    <button class="previous">Previous</button>
-                    <button class="next">Next</button>
+
+                <div class="slideShowContainer bottom">
+                    <div class="slideshowDiv">
+                        <img class="slide" alt="Selected images of hobbies">
+                    </div>
+                    <div class="slideshowDescription">
+                        <button class="previous">Previous</button>
+                        <button class="next">Next</button>
+                        <p class="descriptionTitle">Bio</p>
+                        <p class="description">From Reno, NV... Loves artificial intelligence, algorithms, math, internet of things, embedded computing, and all forms of making... Off the field enjoys reading, scuba diving, hiking, learning new languages, travel, lacrosse, and football. </p>
+                    </div>
                 </div>
             </div>
+
         </section>
         <footer class="footerContact">
             <ul>
