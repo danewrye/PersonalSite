@@ -134,6 +134,18 @@ footer {
     padding-top: 0%;
 }
 
+@media screen and (max-width: 600px) {
+
+    .mountainWrapper {
+        display: none;
+    }
+
+    .navigationWrapper {
+        width: 100%;
+    }
+
+}
+
 /* class specific to index.html */
 
 
